@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISS Visibility App</title>
+    <script src="../build/app.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center bg-secondary mt-5 p-5 rounded">
+                <h1 id="w-location"></h1>
+                <h3 id="w-desc" style="color: black;"></h3>
+
+                <h3 id="w-string"></h3>
+                <img id="w-icon" />
+                <ul id="w-details" class="list-group mt-3">
+                    <li class="list-group-item" id="display" style="font-size: 18px;"></li>
+                </ul>
+                <hr />
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#locModal"
+                    style="font-size: 18px;">
+                    Check ISS Visibility
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
