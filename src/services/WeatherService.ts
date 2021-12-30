@@ -18,7 +18,7 @@ class WeatherService {
 
   async getWeather() {
     const response = await makeRequest(`${this.BASE_URL}?lat=${this.latitude}&lon=${this.longitude}&appid=${this.API_KEY}`);
-    const weatherInfo = new WeatherDTO(response?.data.list[0].dt, response?.data.list[0].weather.main, response?.data.list[0].coord.lat, response?.data.list[0].coord.lon);
+    const weatherInfo = new WeatherDTO(response?.data.list[0].weather.main, response?.data.list[0].coord.lat, response?.data.list[0].coord.lon);
 
     if (isVisible(Number(weatherInfo.getLat()), Number(weatherInfo.getLon()))) {
       const display = global.document.getElementById('display');
