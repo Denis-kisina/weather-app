@@ -44,19 +44,41 @@
 
     "node-geocoder": "^3.27.0",
 
-    "sunrise-sunset-js": "^2.2.1",
-
-    "ts-node": "^10.4.0",
-
-    "typescript": "^4.4.4"
+    "sunrise-sunset-js": "^2.2.1"
 
   },
 
   "devDependencies": {
 
-    "@types/node": "^16.11.7",
+    "@types/node": "^16.11.12",
 
-    "@types/request": "^2.48.7"
+    "@types/request": "^2.48.7",
+
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+
+    "@typescript-eslint/parser": "^5.6.0",
+
+    "eslint": "^8.4.1",
+
+    "eslint-config-airbnb-base": "^15.0.0",
+
+    "eslint-config-prettier": "^8.3.0",
+
+    "eslint-import-resolver-typescript": "^2.5.0",
+
+    "eslint-plugin-import": "^2.25.3",
+
+    "eslint-plugin-prettier": "^4.0.0",
+
+    "eslint-prettier": "^0.0.0-empty",
+
+    "prettier": "^2.5.1",
+
+    "ts-node": "^10.4.0",
+
+    "tsconfig-paths": "^3.12.0",
+
+    "typescript": "^4.5.3"
 
   }
 

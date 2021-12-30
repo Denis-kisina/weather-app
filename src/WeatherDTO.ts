@@ -1,21 +1,21 @@
 export class WeatherDTO {
-    private weather: string;
-    private dayTime: string;
-    private lat: string;
-    private lon: string;
+  private weather: string;
 
-    constructor(dayTime: string, weather: string, lat: string, lon: string) {
-        this.dayTime = dayTime;
-        this.weather = weather;
-        this.lat = lat;
-        this.lon = lon;
-    }
+  private lat: string;
 
-    public getLat() : string {
-        return this.lat;
-    }
+  private lon: string;
 
-    public getLon() : string {
-        return this.lon;
-    }
+  constructor(weather: string, lat: string, lon: string) {
+    this.weather = weather;
+    this.lat = lat;
+    this.lon = lon;
+  }
+
+  public getLat() : string {
+    return this.lat;
+  }
+
+  public getLon() : string {
+    return this.lon;
+  }
 }
